@@ -13,11 +13,6 @@ app.use(bodyParser.urlencoded({extended: false}))
 // parse application/json
 app.use(bodyParser.json())
 
-// index
-app.get('/', function (req, res) {
-	res.send('1153753625')
-})
-
 // for facebook verification
 app.get('/webhook/', function (req, res) {
 	if (req.query['hub.verify_token'] === 'my_voice_is_my_password_verify_me') {
@@ -26,6 +21,12 @@ app.get('/webhook/', function (req, res) {
 		res.send('Error, wrong token')
 	}
 })
+
+// index
+app.get('/', function (req, res) {
+	res.send('1153753625')
+})
+
 
 // to post data
 app.post('/webhook/', function (req, res) {
