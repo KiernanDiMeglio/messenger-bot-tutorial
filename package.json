@@ -1,16 +1,30 @@
 {
-  "name": "secretbots",
+  "name": "todomonitor",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Alt text](/demo/Demo.gif)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kiernan DiMeglio",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4",
-    "request": "^2.71.0"
-  }
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiernanDiMeglio/messenger-bot-tutorial.git"
+  },
+  "keywords": [
+    "facebook",
+    "bot",
+    "messenger",
+    "todolist"
+  ],
+  "bugs": {
+    "url": "https://github.com/KiernanDiMeglio/messenger-bot-tutorial/issues"
+  },
+  "homepage": "https://github.com/KiernanDiMeglio/messenger-bot-tutorial#readme"
 }
