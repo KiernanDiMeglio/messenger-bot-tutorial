@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 
 // for facebook verification
 app.get('/webhook/', function (req, res) {
-	if (req.query['hub.verify_token'] === 'my_voice_is_my_password_verify_me') {
+	if (req.query['hub.verify_token'] === 'cbf8a56f-0ec3-4b54-918b-c5291c948af2') {
 		res.send(req.query['hub.challenge'])
 	} else {
 		res.send('Error, wrong token')
@@ -24,7 +24,7 @@ app.get('/webhook/', function (req, res) {
 
 // index
 app.get('/', function (req, res) {
-	res.send('hub.verify_token')
+	res.send('i am a secret chat bot')
 })
 
 // to post data
