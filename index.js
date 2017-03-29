@@ -24,9 +24,8 @@ app.get('/webhook/', function (req, res) {
 
 // index
 app.get('/', function (req, res) {
-	res.send('1153753625')
+	res.send('hub.verify_token')
 })
-
 
 // to post data
 app.post('/webhook/', function (req, res) {
