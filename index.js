@@ -86,13 +86,9 @@ function sendGenericMessage(sender) {
 					"subtitle": "Testing",
 					"image_url": "http://messengerdemo.parseapp.com/img/rift.png",
 					"buttons": [{
-						"type": "web_url",
-						"url": "https://www.messenger.com",
+						"type": "Go to our website!",
+						"url": "http://www.trendblaze.com",
 						"title": "web url"
-					}, {
-						"type": "postback",
-						"title": "Postback",
-						"payload": "Payload for first element in a generic bubble",
 					}],
 				}, {
 					"title": "Second card",
