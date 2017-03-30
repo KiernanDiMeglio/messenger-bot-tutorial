@@ -82,17 +82,17 @@ function sendGenericMessage(sender) {
 			"payload": {
 				"template_type": "generic",
 				"elements": [{
-					"title": "TrendBlaze",
+					"title": "First card",
 					"subtitle": "Element #1 of an hscroll",
 					"image_url": "http://messengerdemo.parseapp.com/img/rift.png",
 					"buttons": [{
 						"type": "web_url",
-						"url": "https://www.trendblaze.com",
+						"url": "https://www.messenger.com",
 						"title": "web url"
 					}, {
 						"type": "postback",
 						"title": "Postback",
-						"payload": { "url": "https://petersapparel.parseapp.com/img/shirt.png" }
+						"payload": "Payload for first element in a generic bubble",
 					}],
 				}, {
 					"title": "Second card",
