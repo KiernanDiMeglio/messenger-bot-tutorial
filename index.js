@@ -83,7 +83,7 @@ function sendGenericMessage(sender) {
 				"template_type": "generic",
 				"elements": [{
 					"title": "TrendBlaze",
-					"subtitle": "Testing",
+					"subtitle": "The new frontier for shopping.",
 					"image_url": "https://raw.githubusercontent.com/KiernanDiMeglio/trendblaze/master/shared_images/TB-temp-new.png?token=AQMO2QyDduSHfoHGX6SrCc0TLcwcbONIks5Y5lu6wA%3D%3D",
 					"buttons": [{
 						"type": "web_url",
