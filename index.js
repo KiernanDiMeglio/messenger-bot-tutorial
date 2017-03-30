@@ -35,12 +35,12 @@ app.post('/webhook/', function (req, res) {
 		let sender = event.sender.id
 		if (event.message && event.message.text) {
 			let text = event.message.text
-			if (text === 'Generic'){
+			if (text === 'website'){
 				console.log("welcome to chatbot")
 				sendGenericMessage(sender)
 				continue
 			}
-			sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+			sendTextMessage(sender, "Thank you for your message and we would love to get back to you! However, this account is hardly checked.  To best reach us, send an email to 'trendblaze45@gmail.com' or respond back with 'website' to be directed to our website.")
 		}
 		if (event.postback) {
 			let text = JSON.stringify(event.postback)
@@ -54,7 +54,6 @@ app.post('/webhook/', function (req, res) {
 
 // recommended to inject access tokens as environmental variables, e.g.
 const token = process.env.FB_PAGE_ACCESS_TOKEN
-//const token = "EAADU8lqWjyoBAPZCYTC2Wa4QBRHcZCnoIU2hpp8EucOtIm1grEbT2ahCYPWl6PVuviG4ESbUsTZBvdirVV7J0ZAejuMKXn0LLMD9fDMT10aD0oitsONZBA79Id8cGZANgzCAUwLYgEJKDZAWVi0CKf76EzN4LNGEwkhGf4Ks00cmQZDZD"
 
 function sendTextMessage(sender, text) {
 	let messageData = { text:text }
@@ -83,26 +82,20 @@ function sendGenericMessage(sender) {
 			"payload": {
 				"template_type": "generic",
 				"elements": [{
-					"title": "First card",
-					"subtitle": "Element #1 of an hscroll",
-					"image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+					"title": "TrendBlaze",
+					"subtitle": "The forefront of innovation.",
+					"image_url": "https://raw.githubusercontent.com/KiernanDiMeglio/trendblaze/master/shared_images/TB-temp-new.png?token=AQMO2QyDduSHfoHGX6SrCc0TLcwcbONIks5Y5lu6wA%3D%3D",
 					"buttons": [{
 						"type": "web_url",
-						"url": "https://www.messenger.com",
+						"url": "https://www.trendblaze.com",
 						"title": "web url"
 					}, {
 						"type": "postback",
 						"title": "Postback",
-						"payload": "Payload for first element in a generic bubble",
-					}],
-				}, {
-					"title": "Second card",
-					"subtitle": "Element #2 of an hscroll",
-					"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
-					"buttons": [{
-						"type": "postback",
-						"title": "Postback",
-						"payload": "Payload for second element in a generic bubble",
+						"payload": {
+									      	"url": "https://trendblaze.com/",
+									        "is_reusable": true
+									      }
 					}],
 				}]
 			}
