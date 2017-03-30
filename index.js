@@ -83,8 +83,8 @@ function sendGenericMessage(sender) {
 				"template_type": "generic",
 				"elements": [{
 					"title": "TrendBlaze",
-					"subtitle": "The forefront of innovation.",
-					"image_url": "https://raw.githubusercontent.com/KiernanDiMeglio/trendblaze/master/shared_images/TB-temp-new.png?token=AQMO2QyDduSHfoHGX6SrCc0TLcwcbONIks5Y5lu6wA%3D%3D",
+					"subtitle": "Element #1 of an hscroll",
+					"image_url": "http://messengerdemo.parseapp.com/img/rift.png",
 					"buttons": [{
 						"type": "web_url",
 						"url": "https://www.trendblaze.com",
@@ -92,10 +92,16 @@ function sendGenericMessage(sender) {
 					}, {
 						"type": "postback",
 						"title": "Postback",
-						"payload": {
-									      	"url": "https://trendblaze.com/",
-									        "is_reusable": true
-									      }
+						"payload": { "url": "https://petersapparel.parseapp.com/img/shirt.png" }
+					}],
+				}, {
+					"title": "Second card",
+					"subtitle": "Element #2 of an hscroll",
+					"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+					"buttons": [{
+						"type": "postback",
+						"title": "Postback",
+						"payload": "Payload for second element in a generic bubble",
 					}],
 				}]
 			}
