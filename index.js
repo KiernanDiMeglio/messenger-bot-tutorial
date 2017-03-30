@@ -84,20 +84,11 @@ function sendGenericMessage(sender) {
 				"elements": [{
 					"title": "TrendBlaze",
 					"subtitle": "Testing",
-					"image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+					"image_url": "https://raw.githubusercontent.com/KiernanDiMeglio/trendblaze/master/shared_images/TB-temp-new.png?token=AQMO2QyDduSHfoHGX6SrCc0TLcwcbONIks5Y5lu6wA%3D%3D",
 					"buttons": [{
 						"type": "web_url",
 						"url": "http://www.trendblaze.com",
 						"title": "Go to our website!"
-					}],
-				}, {
-					"title": "Second card",
-					"subtitle": "Element #2 of an hscroll",
-					"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
-					"buttons": [{
-						"type": "postback",
-						"title": "Postback",
-						"payload": "Payload for second element in a generic bubble",
 					}],
 				}]
 			}
