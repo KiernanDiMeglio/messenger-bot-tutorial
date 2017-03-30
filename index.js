@@ -86,9 +86,9 @@ function sendGenericMessage(sender) {
 					"subtitle": "Testing",
 					"image_url": "http://messengerdemo.parseapp.com/img/rift.png",
 					"buttons": [{
-						"type": "Go to our website!",
+						"type": "web_url",
 						"url": "http://www.trendblaze.com",
-						"title": "web url"
+						"title": "Go to our website!"
 					}],
 				}, {
 					"title": "Second card",
